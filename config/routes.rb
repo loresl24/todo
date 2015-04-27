@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+ 
+  root 'tasks#index'
+
+  
+  get 'welcome/registro'
+
+  get 'welcome/contacto'
+
+  get 'welcome/aboutus'
+
+
+  resources :pets
+
   resources :tasks
 
   # The priority is based upon order of creation: first created -> highest priority.
